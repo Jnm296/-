@@ -1,0 +1,33 @@
+body {
+    background-color: pink;
+}
+
+#inbox1 {
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 12px;
+}
+
+.rafayel {
+    border: 2px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.rafayel iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    border: none;
+}
