@@ -1,0 +1,119 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-image: url('rafayel/bg.jpeg');
+    background-size: cover;
+}
+
+/* -------------------------------------------------- */
+
+#inbox1 {
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url('vinyl.png'); 
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    animation: spin 4s linear infinite;
+    animation-play-state: paused;
+}
+
+#inbox1.rotating {
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.vinyl-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.song-info {
+    color: #fff;
+    font-family: 'Sarabun', sans-serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+#songTitle {
+    font-size: 16px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 6px 12px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* -------------------------------------------------- */
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.youtube {
+    width: 960px;
+    padding: 10px;
+}
+
+.youtube iframe {
+    width: 100%;
+    height: 540px;
+    border-radius: 15px;
+    border: none;
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* จัดกล่องควบคุมการค้นหาให้อยู่เหนือชื่อเพลง และขนาดไม่ยาวจนเกินไป */
+.player-controls-container {
+    display: flex;
+    justify-content: center; /* จัดกว้างหรือชิดซ้ายตามชอบ เปลี่ยนเป็น flex-start ได้ค่ะ */
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.search-box-wrapper {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+    max-width: 340px; /* ปรับความยาวช่องเสิร์ชให้พอดี ไม่ยาวเต็มจอ */
+}
+
+.search-box-wrapper input {
+    flex: 1;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+.search-box-wrapper button {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-box-wrapper button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
